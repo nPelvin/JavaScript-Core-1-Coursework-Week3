@@ -20,8 +20,12 @@
   
   Let's first look at an example that will teach you how to use these methods.
 */
+const notPink = (currentValue) => currentValue !== "pink";
+function bushChecker(text) {
+  if (text.some(notPink)) return "Toxic! Leave bush alone!";
+  return "Bush is safe to eat from";
+  }
 
-function bushChecker() {}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

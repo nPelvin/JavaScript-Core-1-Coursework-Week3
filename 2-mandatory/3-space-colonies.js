@@ -15,7 +15,11 @@
   
 */
 
-function colonisers() {}
+function colonisers(arr) {
+  const family = arr.filter(x => x.includes("family"));
+  const startsWithA = family.filter(x => x[0] === "A");
+  return startsWithA;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
